@@ -93,6 +93,16 @@
       "path": "/trade",
       "method": "POST",
       "description": "trade endpoint"
+    },
+    {
+      "path": "/api/v1/analysis",
+      "method": "GET",
+      "description": "Paid TARS ensemble analysis — x402 on Celo (Track 2: Real World Adoption / Stablecoin Adoption). Payer sends USDC on eip155:42220 via api.x402.celo.org to PAY_TO_ADDRESS. Returns per-asset direction/confidence/rationale, no execution."
+    },
+    {
+      "path": "/api/v1/celo-status",
+      "method": "GET",
+      "description": "Celo hackathon wiring status — chain, facilitator, USDC, paywall state, builder code. Used by dashboard and judges."
     }
   ],
   "permissions": [
@@ -105,8 +115,15 @@
     "signal_generation",
     "risk_management",
     "trade_execution",
-    "onchain_logging"
+    "onchain_logging",
+    "paid_analysis_celo_x402"
   ],
-  "chain": "xlayer",
+  "chain": "celo",
+  "celo_chain_id": 42220,
+  "celo_caip2": "eip155:42220",
+  "celo_facilitator": "https://api.x402.celo.org",
+  "celo_usdc": "0xcEBA9300f2b948710d2653dD7B07f33A8B32118C",
+  "paid_endpoint": "/api/v1/analysis",
+  "celo_status_endpoint": "/api/v1/celo-status",
   "openapi_generated": "2026-08-30T23:18:51.197151Z"
 }

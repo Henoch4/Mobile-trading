@@ -22,6 +22,9 @@
   ],
   "env": {
     "XLAYER_RPC_URL": "https://testrpc.xlayer.tech/terigon",
-    "AUDIT_CONTRACT_ADDRESS": "0x6019b96e9d0Ba17588eb22579d9c2dEf0473d07c"
+    "AUDIT_CONTRACT_ADDRESS": "0x6019b96e9d0Ba17588eb22579d9c2dEf0473d07c",
+    "CELO_RPC_URL": "https://forno.celo.org",
+    "CELO_CHAIN_ID": "42220",
+    "X402_FACILITATOR_URL": "https://api.x402.celo.org"
   }
 }

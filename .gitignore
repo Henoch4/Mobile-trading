@@ -107,3 +107,9 @@ reports/ml-*.md
 
 # tars-lora validation resume checkpoints (regenerable, local only)
 reports/tars_lora_checkpoints/
+
+# Multi-leg crash-recovery scratch (D1(a)/Z3/W4 — runtime state, never commit)
+data/multi_leg_state/
+
+# ML training outputs (model.pt can be >100 MB — never commit, fetch/regenerate)
+ml_output/
