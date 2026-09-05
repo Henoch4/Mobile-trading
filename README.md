@@ -21,6 +21,9 @@ The agent runs a multi-strategy signal engine (mean reversion + momentum + fundi
 | USDC | `0xcEBA9300f2b948710d2653dD7B07f33A8B32118C` |
 | Facilitator | `https://api.x402.celo.org` |
 | Price | `10000` atomics = $0.01 USDC |
+| Audit trail (separate chain) | X Layer, `chainId: 1952` — decisions are logged to `TradeAuditTrail.sol` before execution |
+
+Note: x402 settlement and audit logging are different chains by design — payments settle in USDC on Celo mainnet, while the immutable decision audit trail lives on X Layer.
 
 Copy `.env.example` to `.env` and set `PAY_TO_ADDRESS` (your USDC receiving wallet) to activate the paywall. Set `CELO_BUILDER_CODE` to your ERC-8021 attribution tag so transactions earn leaderboard credit.
 
