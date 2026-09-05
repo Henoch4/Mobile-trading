@@ -1,6 +1,6 @@
 {
-  "name": "tars-trade-audit-risk-system",
-  "description": "TARS (Trade Audit & Risk System) \u00e2\u20ac\u201d autonomous trading robot with rules it cannot break, live on testnet \u00e2\u20ac\u201d open source, 400+ automated checks passing",
+  "name": "MobileTrading",
+  "description": "Mobile-first AI trading agent on Celo \u2014 sells ensemble market analysis for USDC via x402. Track 2: Real World Adoption / Best Stablecoin Adoption",
   "version": "0.1.0",
   "category": "Finance",
   "endpoints": [
@@ -97,12 +97,12 @@
     {
       "path": "/api/v1/analysis",
       "method": "GET",
-      "description": "Paid TARS ensemble analysis — x402 on Celo (Track 2: Real World Adoption / Stablecoin Adoption). Payer sends USDC on eip155:42220 via api.x402.celo.org to PAY_TO_ADDRESS. Returns per-asset direction/confidence/rationale, no execution."
+      "description": "Paid TARS ensemble analysis \u00e2\u20ac\u201d x402 on Celo (Track 2: Real World Adoption / Stablecoin Adoption). Payer sends USDC on eip155:42220 via api.x402.celo.org to PAY_TO_ADDRESS. Returns per-asset direction/confidence/rationale, no execution."
     },
     {
       "path": "/api/v1/celo-status",
       "method": "GET",
-      "description": "Celo hackathon wiring status — chain, facilitator, USDC, paywall state, builder code. Used by dashboard and judges."
+      "description": "Celo hackathon wiring status \u00e2\u20ac\u201d chain, facilitator, USDC, paywall state, builder code. Used by dashboard and judges."
     }
   ],
   "permissions": [
